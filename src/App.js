@@ -1,5 +1,4 @@
-import './categories.styles.scss';
-import CategoryItem from './components/category-item/category-item.component';
+import Directory from './components/directory/directory.component';
 
 function App() {
   const categories = [
@@ -20,23 +19,17 @@ function App() {
     },
     {
       id: 4,
-      title: 'womens',
+      title: 'women',
       imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
     },
     {
       id: 5,
-      title: 'mens',
+      title: 'men',
       imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
     },
   ];
 
-  return (
-    <div className="categories-container">
-      {categories.map((category) => (
-        <CategoryItem key={category.id} category={category} />
-      ))}
-    </div>
-  );
+  return <Directory categories={categories} />;
 }
 
 export default App;
