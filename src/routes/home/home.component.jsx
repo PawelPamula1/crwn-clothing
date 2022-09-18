@@ -1,6 +1,5 @@
-import Directory from "../../components/directory/directory.component";
+import Directory from '../../components/directory/directory.component';
 import { Outlet } from 'react-router-dom';
-
 
 function Home() {
   const categories = [
@@ -21,22 +20,22 @@ function Home() {
     },
     {
       id: 4,
-      title: 'women',
+      title: 'womens',
       imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
     },
     {
       id: 5,
-      title: 'men',
+      title: 'mens',
       imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
     },
   ];
 
-  return  (
+  return (
     <div>
       <Outlet />
       <Directory categories={categories} />
     </div>
-  )
+  );
 }
 
 export default Home;
