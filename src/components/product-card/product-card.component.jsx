@@ -1,7 +1,4 @@
-import { useContext } from 'react';
-
 import Button, { BUTTON_TYPES_CLASSES } from '../button/button.component';
-
 import {
   Footer,
   Name,
