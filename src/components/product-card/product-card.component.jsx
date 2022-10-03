@@ -1,4 +1,4 @@
-import Button, { BUTTON_TYPES_CLASSES } from '../button/button.component';
+import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
 import {
   Footer,
   Name,
@@ -21,7 +21,7 @@ const ProductCard = ({ product }) => {
         <Name>{name}</Name>
         <Price>{price}</Price>
         <Button
-          buttonType={BUTTON_TYPES_CLASSES.inverted}
+          buttonType={BUTTON_TYPE_CLASSES.inverted}
           onClick={addProductToCart}>
           Add to Card
         </Button>

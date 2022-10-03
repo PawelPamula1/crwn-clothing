@@ -5,7 +5,7 @@ import {
   CartItems,
   EmptyMessage,
 } from './cart-dropdown.styles';
-import Button, { BUTTON_TYPES_CLASSES } from '../button/button.component';
+import Button from '../button/button.component';
 import { useSelector } from 'react-redux';
 import { selectCartItems } from '../../store/cart/cart.selector';
 
@@ -24,11 +24,7 @@ const CartDropdown = () => {
           <EmptyMessage>Your cart is empty</EmptyMessage>
         )}
       </CartItems>
-      <Button
-        buttonType={BUTTON_TYPES_CLASSES.base}
-        onClick={goToCheckoutHandler}>
-        GO TO CHECKOUT
-      </Button>
+      <Button onClick={goToCheckoutHandler}>GO TO CHECKOUT</Button>
     </CartDropdownContainer>
   );
 };

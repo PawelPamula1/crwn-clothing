@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import FormInput from '../form-input/form-input.component';
 import { signInAuthWithEmailAndPassword } from '../../utils/firebase/firebase.utils';
-import Button, { BUTTON_TYPES_CLASSES } from '../button/button.component';
+import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
 import { ButtonsContainer, SignInContainer } from './sign-in-form.styles.jsx';
 import {
   emailSignInStart,
@@ -68,7 +68,7 @@ const SignInForm = () => {
           <Button type="submit">Sign In</Button>
           <Button
             type="button"
-            buttonType={BUTTON_TYPES_CLASSES.google}
+            buttonType={BUTTON_TYPE_CLASSES.google}
             onClick={signInWithGoogle}>
             Google sign in
           </Button>
